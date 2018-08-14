@@ -5,16 +5,20 @@ import { FormsModule from '@angular/forms'};
 import { AppComponent } from './app.component';
 import { PokemonComponent } from './pokemon/pokemon.component';
 
+import { PokemonService } from './services/pokemon.service';
+
 @NgModule({
   declarations: [
     AppComponent,
-    PokemonComponent
+    PokemonComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    PokemonService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

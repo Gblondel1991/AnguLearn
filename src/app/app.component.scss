@@ -19,7 +19,19 @@ h1
    font-weight: bold
 }
 
-h2 {
-    font-family: SolidPokeFont;
-    font-size: 2rem
+.top-pictures{
+    position: fixed;
+    cursor: pointer
+}
+
+.Sacha {
+    left: 3%;
+    top: 40%;
+    width: 12rem;
+}
+
+.Rocket{
+    right: 3%;
+    bottom: 5%;
+    width: 15rem
 }
