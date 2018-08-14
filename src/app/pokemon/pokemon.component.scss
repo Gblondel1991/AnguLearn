@@ -1,0 +1,32 @@
+.card {
+    display: inline-flex;
+}
+
+h5 {
+    font-family: HollowPokeFont;
+    font-size: 2rem;
+    display: inline;
+}
+
+.pokemon {
+    width: 13rem;
+}
+
+.pokeball {
+    width: 1.7rem;
+    position: relative;
+    float: right;
+    display: inline;
+    margin-top: 0.85rem
+}
+
+.score-container {
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around
+}
+
+.score {
+    width: 3rem;
+    cursor: pointer;
+}

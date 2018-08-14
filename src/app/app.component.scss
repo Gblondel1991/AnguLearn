@@ -1,0 +1,25 @@
+@font-face
+{
+    font-family: HollowPokeFont;
+    src: url("../../fonts/PokemonHollow.ttf");
+}
+
+@font-face
+{
+    font-family: SolidPokeFont;
+    src: url("../../fonts/PokemonSolid.ttf");
+}
+
+h1
+{
+   font-family: HollowPokeFont;
+   font-size: 6rem ;
+   margin-top: 1rem;
+   color: whitesmoke;
+   font-weight: bold
+}
+
+h2 {
+    font-family: SolidPokeFont;
+    font-size: 2rem
+}

@@ -1,0 +1,16 @@
+<li [ngClass]="{'list-inline-item card mr-5': true, 'list-group-item-success': pokeScore > 0, 'list-group-item-danger': pokeScore < 0}" 
+ style="width: 18rem; height: 31rem;">
+    <div class="card-body">
+      <h5 [ngStyle]="{color: getColor()}" class="card-title">{{ pokeName }}</h5>
+      <img *ngIf="pokeStatus === 'possessed'" src="https://vignette.wikia.nocookie.net/youtubepoop/images/4/4c/Pokeball.png/revision/latest?cb=20150418234807" alt="Pokeball" class="pokeball">
+      <p *ngIf="pokeStatus === 'possessed'">Capturé le : {{ Catched | date: 'dd/MM/yy'}}</p>
+      <p *ngIf="pokeStatus === 'met'">Rencontré le : {{ Catched | date: 'dd/MM/yy'}}</p>
+      <p *ngIf="pokeStatus === 'unknown'">Jamais rencontré</p>
+      <img src="{{ imageUrl }}" alt="{{ pokeName }}" class="pokemon mt-4">
+      <p class="card-text">{{ pokeDescription }}</p>
+      <div class="score-container">
+        <img class="score" (click)="increaseScore()" src="https://cdn.icon-icons.com/icons2/851/PNG/512/pikachu_icon-icons.com_67535.png" alt="+">
+        <img class="score" (click)="decreaseScore()" src="https://vignette.wikia.nocookie.net/pkmnshuffle/images/c/ca/Pikachu_%28Dejected%29.png/revision/latest?cb=20170410223546" alt="-">
+      </div>
+    </div>
+  </li>
