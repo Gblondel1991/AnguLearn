@@ -1,0 +1,18 @@
+<img (click)="onCatch()" class="Sacha top-pictures" src="https://pre00.deviantart.net/454c/th/pre/f/2014/091/d/c/ash_ketchum_by_mighty355-d7cjdfg.png" alt="Sacha">
+        <img (click)="onFetch()" class="mt-5 " width="300" alt="pokedex" src="https://www.pokepedia.fr/images/9/90/Pok%C3%A9dex_Kanto_Gen3.png">
+        <img (click)="onUncatch()"class="Rocket top-pictures" src="https://78.media.tumblr.com/bded0efa7f57d83d50bfd7d83c65b91b/tumblr_inline_oao9i9s5Bd1u5kluz_1280.png" alt="Team Rocket">
+    <ul class="list-inline mt-5">
+      <app-pokemon 
+        *ngFor="let pokemon of pokemons; let i = index"
+        [indexOfPokemon] = "i"
+        [pokeName]="pokemon.name"
+        [pokeStatus]="pokemon.status"
+        [pokeDescription]="pokemon.description"
+        [imageUrl]="pokemon.image"
+        [pokeScore]=pokemon.score
+        [id] = "pokemon.id"
+        >
+      </app-pokemon>
+    </ul>
+
+  <button [ngClass]="{'show': changes == true, 'hide' : changes == false}" (click)="onSave()">Save changes</button>

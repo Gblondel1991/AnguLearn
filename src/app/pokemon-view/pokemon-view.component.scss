@@ -1,0 +1,45 @@
+
+.top-pictures{
+    position: fixed;
+    cursor: pointer
+}
+
+.Sacha {
+    left: 3%;
+    top: 40%;
+    width: 12rem;
+}
+
+.Rocket{
+    right: 3%;
+    bottom: 5%;
+    width: 15rem
+}
+
+button {
+    margin: 0 auto 5% auto;
+    padding: 1% 0 1% 0 ;
+    width: 25%;
+    border-radius: 20px;
+    background-color: #FFCD00;
+    font-family: SolidPokeFont;
+    color: #356ABC;
+    font-size: 1.5rem;
+}
+
+button:hover {
+    transition: all 1S;
+    background-color: #FFCD00;
+    cursor: pointer;
+    color: rgb(3, 81, 197)
+}
+
+.hide {
+    opacity: 0;
+    transition: all 1s
+}
+
+.show {
+    opacity: 1;
+    transition: all 2s
+}

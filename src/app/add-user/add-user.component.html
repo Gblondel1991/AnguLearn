@@ -1,0 +1,28 @@
+<div [ngClass]="{'card': true}" >
+    <div class="row">
+          <form [formGroup]="userForm" (ngSubmit)="onSubmitForm()">
+            <div class="form-group">
+              <label for="firstname">Firstname</label>
+              <input type="text" id="firstname" formControlName="firstname" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="lastname">Lastname</label>
+              <input type="text" id="lastname" formControlName="lastname" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" id="email" formControlName="email" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="Avatar">Avatar's URL</label>
+              <input type="text" id="image" formControlName="image" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="Pokemon">Pokemon's URL</label>
+              <input type="text" id="image" formControlName="pokemonImage" class="form-control">
+            </div>
+            <button disabled *ngIf="userForm.invalid" class="btn invalid-btn">Complete to add</button>
+            <button *ngIf="userForm.valid" type="submit" class="btn valid-btn" [disabled]="userForm.invalid" >Add user</button>
+          </form>
+      </div>
+  </div>

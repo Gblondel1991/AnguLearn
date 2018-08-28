@@ -1,0 +1,16 @@
+<div class="card">
+        <h3 class="SolidPokeFont">
+          {{ experience.title }}
+        </h3>
+        <p class="by SolidPokeFont">By</p>
+        <h4 class="SolidPokeFont">
+          {{ experience.username }}
+        </h4>
+        <p> {{ experience.preferedVersion }} Expert</p>
+        <p class="content">
+          {{ experience.content }}
+        </p>
+        <p class="date">
+          Publié le {{ experience.date | date:"dd/MM/yyyy 'à' HH:mm:ss" }}
+        </p>
+</div>

@@ -1,0 +1,14 @@
+<ul class="list-group">
+  <li class="list-grou-item" *ngFor="let user of users">
+    <div class="card">
+      <img src="{{ user.image }}" alt="Avatar">
+      <img class="pokemon" src="{{ user.pokemonImage }}" alt="Pokemon">
+      <h3>
+        {{ user.firstname }} {{ user.lastname}}
+      </h3>
+      <p>
+        {{ user.email }}
+      </p>
+    </div>
+  </li>
+</ul>

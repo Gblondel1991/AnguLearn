@@ -1,0 +1,30 @@
+.card {
+    width: 60%;
+    margin : 5% auto 5% auto;
+    padding: 4% 0 3% 0;
+    border-radius: 5%;
+    box-shadow: 8px 8px 12px whitesmoke;
+}
+
+form {
+    width: 70%;
+    margin: 0 auto 0 auto;
+}
+
+button {
+    margin: 3% auto 3% auto;
+    width: 66%;
+    height: 13%;
+    border-radius: 20px;
+    background-color: #FFCD00;
+    font-family: SolidPokeFont;
+    color: #356ABC;
+    font-size: 1.5rem;
+}
+
+valid-button:hover {
+    transition: all 1S;
+    background-color: #FFCD00;
+    cursor: pointer;
+    color: rgb(3, 81, 197)
+}

@@ -1,0 +1,8 @@
+<div *ngIf="loadInStatus == false && loadOutStatus == false" class="auth-container">
+    <img src="https://www.pokebip.com/pokedex-images/artworks/152.png" alt="Germignon">
+    <button (click)="onSignInLoad() ; onSignIn()" class="btn btn-success mb-5">Sign In</button>
+    <img src="https://www.pokebip.com/pokedex-images/artworks/212.png" alt="Cizayox" class="mt-3">
+    <button (click)="onSignOutLoad() ; onSignOut()" class="btn btn-danger">Sign Out</button>
+</div>
+<img class="gif" *ngIf="loadInStatus == true" src="https://media2.giphy.com/media/G9qfCvxlwGAaQ/200.gif" alt="Ash">
+<img class="gif" *ngIf="loadOutStatus == true" src="https://orig00.deviantart.net/6f24/f/2012/045/1/f/no_valentine_for_you_pikachu_by_hidan_is_mine-d4pr55h.gif" alt="Pikachu">

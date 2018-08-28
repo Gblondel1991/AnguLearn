@@ -1,0 +1,38 @@
+.card {
+    margin: 5% auto 5% auto;
+    padding: 3% 0 4% 0;
+    width: 70%;
+    border-radius: 5%;
+    box-shadow: 8px 8px 12px whitesmoke;
+}
+
+h3 {
+    color: #FFCB05;
+    font-family: SolidPokeFont;
+    font-size: 4rem;
+    margin: 0% auto 4% auto;
+}
+
+p {
+    font-size: 1rem;
+    width: 80%;
+    margin: 0 auto 0 auto
+}
+
+button {
+    margin: 3% auto 0 auto;
+    width: 30%;
+    height: 9%;
+    border-radius: 20px;
+    background-color: #FFCD00;
+    font-family: SolidPokeFont;
+    color: #356ABC;
+    font-size: 1.5rem;
+}
+
+button:hover {
+    transition: all 1S;
+    background-color: #FFCD00;
+    cursor: pointer;
+    color: rgb(3, 81, 197)
+}

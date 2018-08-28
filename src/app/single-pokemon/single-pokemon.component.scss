@@ -1,11 +1,14 @@
 .card {
-    display: inline-flex;
-    padding: 0.5rem;
-    margin-bottom: 3%
+    margin-top: 10%;
+    width: 60%;
+    margin : 10% auto 5% auto;
+    padding: 2%;
+    border-radius: 5%;
+    box-shadow: 8px 8px 12px whitesmoke;
 }
 
 .list-group-item-success {
-    transition: all 1s
+    transition: all 1s;
 }
 
 .list-group-item-danger {
@@ -16,25 +19,32 @@
     transition: all 1s
 }
 
-h5 {
-    font-family: HollowPokeFont;
-    font-size: 2rem;
-    display: inline;
-    transition: all 1s;
+.pointer {
     cursor: pointer;
+}
+
+.card-title {
+    font-family: SolidPokeFont;
+    font-size: 3rem;
+    text-align: center;
+    transition: all 1s
 }
 
 .pokemon {
     width: 13rem;
-    cursor: pointer;
-    margin: 20% 0 10% 0
+    margin : 8% 0 3% 0;
 }
 
 .pokeball {
     width: 1.7rem;
     position: absolute;
-    top: -7%;
-    right: 4%
+    right: 20%;
+    top: 0%
+}
+
+.card-text {
+    width: 60%;
+    margin: 0 auto 4% auto
 }
 
 .score-container {
@@ -46,6 +56,11 @@ h5 {
 .score {
     width: 3rem;
     cursor: pointer;
+    margin-bottom: 2%
+}
+
+.pokedex {
+    width: 5%
 }
 
 .status {

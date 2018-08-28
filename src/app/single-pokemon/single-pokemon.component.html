@@ -1,0 +1,21 @@
+<div [ngClass]="{'card': true, 'list-group-item-success': pokeScore > 0, 'list-group-item-danger': pokeScore < 0, 'list-group-item-none': pokeScore == 0}" >
+    <div class="card-body">
+      <div (click)="onSwitchStatus()">
+        <h3 [ngStyle]="{color: getColor()}" class="card-title pointer">{{ pokeName }}</h3>
+        <img [ngClass]="{'hide': pokeStatus != 'possessed', 'show': pokeStatus == 'possessed', 'pokemon' : true, 'pointer' : true}" src="https://vignette.wikia.nocookie.net/youtubepoop/images/4/4c/Pokeball.png/revision/latest?cb=20150418234807" alt="Pokeball" class="pokeball">
+        <div class="status-content">
+        <p [ngClass]="{'hide': pokeStatus != 'possessed', 'show': pokeStatus == 'possessed', 'status' : true}">Capturé le : {{ Catched | date: 'dd/MM/yy'}}</p>
+        <p [ngClass]="{'hide': pokeStatus != 'met', 'show': pokeStatus == 'met', 'status' : true }">Rencontré le : {{ Catched | date: 'dd/MM/yy'}}</p>
+        <p [ngClass]="{'hide': pokeStatus != 'unknown', 'show': pokeStatus == 'unknown', 'status' : true}">Jamais rencontré</p>
+        </div>
+        <img src="{{ imageUrl }}" alt="{{ pokeName }}" class="pokemon pointer" >
+        <p class="card-text pointer">{{ pokeDescription }}</p>
+      </div>
+      <div class="score-container">
+        <img class="score" (click)="increaseScore()" src="https://cdn.icon-icons.com/icons2/851/PNG/512/pikachu_icon-icons.com_67535.png" alt="+">
+        <img class="score" (click)="decreaseScore()" src="https://vignette.wikia.nocookie.net/pkmnshuffle/images/c/ca/Pikachu_%28Dejected%29.png/revision/latest?cb=20170410223546" alt="-">
+      </div>
+      
+      <a routerLink="/pokemons" class="redirect"> <img src="https://www.pokepedia.fr/images/9/90/Pok%C3%A9dex_Kanto_Gen3.png" alt="Prof Chen" class="pokedex"> Back to Pokedex</a>
+    </div>
+</div>

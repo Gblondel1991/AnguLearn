@@ -1,0 +1,37 @@
+<div [ngClass]="{'card': true}" >
+    <div class="row">
+          <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+            <div class="form-group">
+              <label for="username">
+                Username
+              </label>
+              <input type="text" id="username" name="username" class="form-control" ngModel required>
+            </div>
+            <div class="form-group">
+              <label for="Title">
+                  Title
+              </label>
+              <input class="form-control" name="title" id="title" cols="30" rows="3" ngModel required>
+            </div>
+            <div class="form-group">
+              <label for="Content">
+                  Content
+              </label>
+              <textarea class="form-control" name="content" id="content" cols="30" rows="3" ngModel required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="Prefered Version">
+                  Prefered Version
+              </label>
+              <select id="preferedVersion" name="preferedVersion" class="form-control" [(ngModel)]="defaultStatus">
+                <option>Yellow</option>
+                <option>Red/Blue</option>
+                <option>Gold/Silver</option>
+                <option>Ruby/Saphyre</option>
+              </select>
+            </div>
+            <button disabled *ngIf="f.invalid" class="btn">Complete to add</button>
+            <button *ngIf="!f.invalid" type="submit" class="btn valid-button" [disabled]="f.invalid">Add PokExperience !</button>
+          </form>
+      </div>
+  </div>

@@ -10,28 +10,76 @@
     src: url("../../fonts/PokemonSolid.ttf");
 }
 
+.nav {
+    background-color:#ff4d4d;
+    height: 4rem;
+    opacity: 0.8;
+    display: flex;
+    justify-content: space-around;
+    line-height: 4rem;
+    z-index: 9999;
+}
+
+.nav-item {
+    font-family: SolidPokeFont;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color:  whitesmoke;
+    cursor: pointer;
+}
+
 h1
 {
    font-family: HollowPokeFont;
    font-size: 6rem ;
-   margin-top: 1rem;
+   margin-top: 1.5rem;
    color: whitesmoke;
-   font-weight: bold
+   font-weight: bold;
 }
 
-.top-pictures{
-    position: fixed;
-    cursor: pointer
+.list-group-item-success {
+    transition: all 1s
 }
 
-.Sacha {
-    left: 3%;
-    top: 40%;
-    width: 12rem;
+.list-group-item-danger {
+    transition: all 1s
 }
 
-.Rocket{
-    right: 3%;
-    bottom: 5%;
-    width: 15rem
+.hide {
+    opacity: 0;
+    transition: all 1s;   
+    transform: translateY(-450px);
+}
+
+.show {
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+.counter {
+    position: absolute;
+    right: 2%;
+    font-size: 0.8rem
+}
+
+.card {
+    background-color: #ff4d4d;
+    color: whitesmoke;
+    padding: 5% 5% 10% 5%;
+}
+
+.link {
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+    margin-bottom: 10%
+}
+
+.container {
+    text-align: center
 }
